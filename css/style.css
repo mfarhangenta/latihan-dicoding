@@ -1,0 +1,181 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+  
+body {
+  font-family: 'Barlow Condensed';
+
+}
+.card h1 {
+  color: #FFBB70;
+  font-size: 38px;
+}
+     
+h2, h3 {
+  color: #FFBB70;
+}
+
+article h2 {
+  font-size: 30px;
+  margin-bottom: 25px;
+}
+article p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  text-align: justify;
+}
+article ul {
+  font-size: 18px;
+  padding-left: 20px;
+  margin-bottom: 25px;
+}
+article h1 {
+  margin-bottom: 25px;
+}
+article figure {
+  margin-bottom: 25px;
+}
+footer {
+  padding: 40px;
+  color: white;
+  background-color: #ED9455;
+  text-align: center;
+  font-weight: bold;
+}
+
+  
+nav a {
+  font-size: 19px;
+  font-weight: 400;
+  text-decoration: none;
+  color: white;
+}
+  
+nav a:hover {
+  font-weight: bold;
+}
+.profile header {
+  text-align: center;
+}
+.featured-image {
+  width: 80%;
+  object-fit: cover;
+  object-position: center;
+}
+.profile img {
+  width: 240px;
+}
+.card {
+  padding: 20px;
+  margin: 25px;
+}
+
+
+nav ul {
+  padding-inline: 16rem;
+  display: flex;
+  
+  gap: 2rem;
+}
+  
+nav li {
+  list-style-type: none;
+}
+  
+nav {
+  background-color: #ED9455;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 8%;
+  padding-left: 8%;
+}
+nav h1 {
+  width: 12%;
+}
+  
+main {
+  padding: 20px;
+  
+  display: flex;
+  gap: 1.5rem;
+}
+  
+#content {
+  flex: 5;
+  
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1rem 2rem;
+}
+  
+aside {
+  flex: 1;
+}
+  
+  
+header {
+  display: inline;
+}
+
+.profile {
+  border: 1px solid black;
+  background-color: rgb(237, 237, 237);
+  padding: 36px;
+  margin-top: 63px;
+}
+  
+  
+  
+/* Perangkat dengan lebar layar 1200px dan di bawahnya */
+@media screen and (max-width: 1200px) {
+    main {
+      flex-flow: column nowrap;
+    }
+    main aside {
+      align-self: center;
+    }
+    nav a {
+      font-size: 18px;
+    }
+  }
+/* Perangkat dengan lebar layar 768px dan di bawahnya */
+@media screen and (max-width: 768px) {
+    nav ul {
+     justify-content: center;
+   }
+    main aside {
+      align-self: stretch;
+    }
+    nav a {
+      font-size: 14px;
+    }
+  
+}
+
+@media screen and (max-width: 562px) {
+  nav ul {
+    justify-content: center;
+  }
+   main aside {
+     align-self: auto;
+   }
+   nav a {
+     font-size: 12px;
+   }
+}
+@media screen and (max-width: 600px) {
+  nav ul {
+    justify-content: center;
+  }
+   main aside {
+     align-self: auto;
+   }
+   nav a {
+     font-size: 13px;
+   }
+}
